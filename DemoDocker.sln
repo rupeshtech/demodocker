@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDocker", "DemoDocker\DemoDocker.csproj", "{ED2174EE-7057-426D-870C-95B0980DC1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDocker.Tests", "DemoDocker.Tests\DemoDocker.Tests.csproj", "{52135AA4-C8F9-4824-A088-84DF6D6C9872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDocker.Db", "DemoDocker.Db\DemoDocker.Db.csproj", "{F8555A17-1DBB-43CA-9CAA-54D8DF7C31BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED2174EE-7057-426D-870C-95B0980DC1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2174EE-7057-426D-870C-95B0980DC1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2174EE-7057-426D-870C-95B0980DC1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2174EE-7057-426D-870C-95B0980DC1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52135AA4-C8F9-4824-A088-84DF6D6C9872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52135AA4-C8F9-4824-A088-84DF6D6C9872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52135AA4-C8F9-4824-A088-84DF6D6C9872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52135AA4-C8F9-4824-A088-84DF6D6C9872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8555A17-1DBB-43CA-9CAA-54D8DF7C31BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8555A17-1DBB-43CA-9CAA-54D8DF7C31BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8555A17-1DBB-43CA-9CAA-54D8DF7C31BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8555A17-1DBB-43CA-9CAA-54D8DF7C31BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  
+  db:
+    image: microsoft/mssql-server-windows-express
+    ports:
+      - "1433:1433"
+    environment: 
+      - ACCEPT_EULA=Y
+      - sa_password=MEETUP_r0tterd@m
+    networks:
+      - app-net
+
+  web:
+    image: demodockerwithdb
+    ports:
+      - "80:80"
+    environment:
+      - DB_CONNECTION_STRING=Server=product-launch-db;Database=ProductLaunch;User Id=sa;Password=MEETUP_r0tterd@m;
+    networks:
+      - app-net
+networks:
+  app-net:
+    external:
+      name: nat
