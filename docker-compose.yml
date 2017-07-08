@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
   
-  demodocker-db:
+  demofinal-db:
     image: microsoft/mssql-server-windows-express
     ports:
       - "1433:1433"
@@ -16,12 +16,12 @@ services:
       - app-net
 
   web:
-    image: demodocker
+    image: finaldemo
     ports:
-      - "98:80"
+      - "97:80"
     tty: true
     environment:
-      - DB_CONNECTION_STRING=Server=demodocker-db;Database=ProductLaunch;User Id=sa;Password=MEETUP_Amst3rd@m;
+      - DB_CONNECTION_STRING=Server=demofinal-db;Database=ProductLaunch;User Id=sa;Password=MEETUP_Amst3rd@m;
     networks:
       - app-net
 networks:
