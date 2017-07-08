@@ -16,7 +16,7 @@ services:
       - app-net
 
   web:
-    image: finaldemo
+    image: dockerdemo
     ports:
       - "97:80"
     tty: true
