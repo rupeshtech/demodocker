@@ -14,7 +14,7 @@ namespace DemoDocker.Controllers
 {
     public class ProductsController : Controller
     {
-        private ProductContext db = new ProductContext(ConfigurationManager.ConnectionStrings["ProductContext"].ConnectionString);
+        private ProductContext db = new ProductContext(Config.ProductConnectionString);
 
         // GET: Products
         public ActionResult Index()
