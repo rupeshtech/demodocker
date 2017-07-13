@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoDocker.Db;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,10 @@ namespace DemoDocker.Controllers
 {
     public class HomeController : Controller
     {
+        private ProductContext db = new ProductContext(Config.ProductConnectionString);
         public ActionResult Index()
         {
+            ViewBag.Path = Config.Path;
             return View();
         }
 

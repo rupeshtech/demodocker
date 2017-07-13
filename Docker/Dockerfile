@@ -8,3 +8,7 @@ COPY publish  /DemoDocker
 RUN New-Website -Name 'DemoDocker' -PhysicalPath 'C:\DemoDocker' -Port 80 -Force
 
 EXPOSE 80
+
+COPY ServiceMonitor.exe /
+COPY startup.ps1 /
+ENTRYPOINT ./startup.ps1
