@@ -9,10 +9,8 @@ namespace DemoDocker.Controllers
 {
     public class HomeController : Controller
     {
-        private ProductContext db = new ProductContext(Config.ProductConnectionString);
         public ActionResult Index()
         {
-            ViewBag.Path = Config.Path;
             return View();
         }
 
