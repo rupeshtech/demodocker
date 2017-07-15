@@ -10,16 +10,14 @@ services:
       - ACCEPT_EULA=Y
       - sa_password=MEETUP_Amst3rd@m
     volumes:
-      - rupesh-volume:C:/var/lib/db
+      - demodocker-volume:C:/var/lib/db
     networks:
       - app-net
 
   web:
-    image: dockerdemo
+    image: uitgeest_meetup:v1
     ports:
       - "97:80"
-    env_file:
-      - a.env
     environment:
       - ProductContext=Server=demofinal-db;Initial Catalog=Product;User ID= sa; Password=MEETUP_Amst3rd@m
     networks:
@@ -30,4 +28,4 @@ networks:
       name: nat
       
 volumes:
-  rupesh-volume:
+  demodocker-volume:
