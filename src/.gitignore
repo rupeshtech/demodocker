@@ -191,7 +191,6 @@ _Pvt_Extensions/
 ModelManifest.xml
 packages/
 
-Scripts/
 *.orig
 src/.vs/config/applicationhost.config
 App_Readme/
