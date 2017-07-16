@@ -21,7 +21,7 @@ namespace DemoDocker.Db
                 {
                     value = Environment.GetEnvironmentVariable(variable, EnvironmentVariableTarget.Process);
                 }
-                return value;
+                return value?? ConfigurationManager.ConnectionStrings[variable].ConnectionString;
             }
             return ConfigurationManager.ConnectionStrings[variable].ConnectionString;
         }
