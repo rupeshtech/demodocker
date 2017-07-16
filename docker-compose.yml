@@ -15,9 +15,9 @@ services:
       - app-net
 
   web:
-    image: uitgeest_meetup:v1
+    image: utgeest_meetup:v1
     ports:
-      - "97:80"
+      - "96:80"
     environment:
       - ProductContext=Server=demofinal-db;Initial Catalog=Product;User ID= sa; Password=MEETUP_Amst3rd@m
     networks:
